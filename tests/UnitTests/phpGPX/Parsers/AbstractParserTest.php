@@ -38,7 +38,7 @@ abstract class AbstractParserTest extends TestCase
 
 	protected function setUp(): void
 	{
-		ini_set(serialize_precision, 17);
+		ini_set("serialize_precision", 17);
 		
 		$reflection = new \ReflectionClass($this->testParserClass);
 
